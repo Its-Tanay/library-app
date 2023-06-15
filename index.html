@@ -5,9 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  type="text/css" rel="stylesheet" href="styles.css">
-    <title>Library</title>
+    <title>Library App</title>
 </head>
 <body>
+
+    <div class="header">
+        <h1 class="project-header">BookHive</h1>
+
+        <div>
+            <button id="new-book">NEW BOOK</button>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    
+    <form style="display: none;">
+        <div  class="btn-1">
+            <span>Fill in the details*</span>
+            <button id="exit-btn">x</button>
+        </div>
+
+        <div class="in">
+            <label for="title-input">Title</label>
+            <input type="text" name="title" id="title-input">
+        </div>
+        <div class="in">
+            <label for="author-input">Author</label>
+            <input type="text" name="author" id="author-input">
+        </div>
+        <div class="in">
+            <label for="pages-input">No. of Pages</label>
+            <input type="number" name="pages" id="pages-input">
+        </div>
+
+        <div class="btn-2"><button type="submit" id="add-btn">ADD BOOK</button></div>
+    </form>
+
+    <div class="library"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
